@@ -1,5 +1,5 @@
 ## amphibian for weewx - Copyright 2012-2013 Matthew Wall
-## $Id: almanac.html.tmpl 818 2014-02-01 13:16:00Z mwall $
+## $Id: almanac.html.tmpl 1169 2014-12-07 14:39:20Z mwall $
 #errorCatcher Echo
 #encoding UTF-8
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -51,7 +51,7 @@
   </head>
 
   <body>
-    #include $Extras.header
+    #include "header.inc"
 
     <div id='observation_title'>
       <p>Almanac Data</p>
@@ -910,7 +910,7 @@
 
     </div>
 
-    #include $Extras.footer
+    #include "footer.inc"
 
     <script>
       setTabURLs('almanac','table');
