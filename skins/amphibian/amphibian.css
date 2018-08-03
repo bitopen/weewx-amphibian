@@ -75,7 +75,7 @@ A:hover {text-decoration: underline;}
     text-align: right;
 }
 .leftpad {
-    padding-left: 5;
+    padding-left: 5px;
 }
 .bigger {
     font-size: 140%;

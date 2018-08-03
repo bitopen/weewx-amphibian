@@ -49,12 +49,12 @@ $current.dateTime
 
 <div class='tabPane'>
   <div class='leftCell' style='width:10px'>&nbsp;</div>
-  <div id='3hours' class='tab'><a href='.'>3 Hours</a></div>
-  <div id='24hours' class='tab'><a href='day.html'>24 Hours</a></div>
-  <div id='7days' class='tab'><a href='week.html'>7 Days</a></div>
-  <div id='30days' class='tab'><a href='month.html'>30 Days</a></div>
-  <div id='365days' class='tab'><a href='year.html'>365 Days</a></div>
+  <div id='hour' class='tab'><a id='hour-link' href='.'>Hour</a></div>
+  <div id='day' class='tab'><a id='day-link' href='.'>Day</a></div>
+  <div id='week' class='tab'><a id='week-link' href='.'>Week</a></div>
+  <div id='month' class='tab'><a id='month-link' href='.'>Month</a></div>
+  <div id='year' class='tab'><a id='year-link' href='.'>Year</a></div>
   <div style='float:right; width:10px;'>&nbsp;</div>
-  <div id='button-tables' class='rightTab'>Tables</div>
-  <div id='button-charts' class='rightTab'>Charts</div>
+  <div id='button-tables' class='rightTab'><a id='button-tables-link' href='.'>Tables</a></div>
+  <div id='button-charts' class='rightTab'><a id='button-charts-link' href='.'>Charts</a></div>
 </div>
