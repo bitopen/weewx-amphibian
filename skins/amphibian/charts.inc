@@ -1,5 +1,5 @@
 ## amphibian for weewx - Copyright 2012-2013 Matthew Wall
-## $Id: charts.inc 1957 2014-01-26 14:07:36Z mwall $
+## $Id: charts.inc 871 2014-02-10 17:38:14Z mwall $
 
 <div id='charts'>
   <div>
@@ -31,7 +31,7 @@
     </div>
     <div class='bordered cell graph'>
       <div class='leftCell'>Wind Vector</div>
-      <div><img id='img_windvec' class='plot' src='faviocon.ico'/></div>
+      <div><img id='img_windvec' class='plot' src='favicon.ico'/></div>
     </div>
   </div>
   <div>
@@ -44,7 +44,7 @@
   <div>
     <div class='bordered cell graph' style='clear:both'>
       <div class='leftCell'>Solar Radiation</div><div class='units'>$unit.label.radiation</div>
-      <div><img id='img_radiation' class='plot' src='faviocon.ico'/></div>
+      <div><img id='img_radiation' class='plot' src='favicon.ico'/></div>
     </div>
   </div>
 #end if

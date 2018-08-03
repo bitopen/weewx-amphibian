@@ -1,3 +1,6 @@
+0.10 10feb2014
+* fixed typo in charts.inc
+
 0.9 02feb2014
 * use SKIN_DIR in install.py
 

@@ -1,4 +1,4 @@
-# $Id: install.py 847 2014-02-03 00:16:45Z mwall $
+# $Id: install.py 872 2014-02-10 17:48:43Z mwall $
 # installer for amphibian
 # Copyright 2014 Matthew Wall
 
@@ -10,7 +10,7 @@ def loader():
 class AmphibianInstaller(ExtensionInstaller):
     def __init__(self):
         super(AmphibianInstaller, self).__init__(
-            version="0.9",
+            version="0.10",
             name='amphibian',
             description='Skin that looks a bit like a wet frog.',
             author="Matthew Wall",
