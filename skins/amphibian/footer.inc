@@ -1,4 +1,5 @@
 ## amphibian for weewx - Copyright 2012-2013 Matthew Wall
+## $Id$
 
 <div class='wide bordered line cell' style='clear:both'>
   <div class='leftCell'>

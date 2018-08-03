@@ -1,4 +1,5 @@
 ## amphibian for weewx - Copyright 2012-2013 Matthew Wall
+## $Id$
 
 <div class='wide bordered line cell'>
   <div class='leftCell'>
@@ -12,14 +13,32 @@ $current.dateTime
 <div style='width: 100%'>
   <div class='bordered header' style='clear: both'>
     <div class='headerContent'>
-      <span class='bigger'><span class='value'>$current.outTemp.formatted</span>&deg;</span>$unit.label.outTemp<br/>
+      <span class='bigger'><span class='value'>$current.outTemp.formatted</span>&deg;</span> $unit.label.outTemp<br/>
       Humidity <span class='value'>$current.outHumidity.formatted</span> $unit.label.outHumidity<br/>
       Pressure <span class='value'>$current.barometer.formatted</span> $unit.label.barometer<br/>
     </div>
     <div class='leftCell leftpad rightAlign'>
-      <span class='bigger'>&#8962; &nbsp;</span><br/>
-      <span class='value'></span>&deg;C<br/>
-      <span class='value'></span> %<br/>
+      <span class='value'>$current.inTemp.formatted</span>$unit.label.outTemp<br/>
+      <span class='value'>$current.inHumidity.formatted</span>$unit.label.outHumidity<br/>
+      <span class='bigger'>
+#if $varExists('trend')
+#if $trend.barometer.raw is not None:
+#if $trend.barometer.raw > 6
+      &#8679;&#8679;&#8679;
+#elif $trend.barometer.raw > 3
+      &#8679;&#8679;
+#elif $trend.barometer.raw > 0.5
+      &#8679;
+#elif $trend.barometer.raw < -6
+      &#8681;&#8681;&#8681;
+#elif $trend.barometer.raw < -3
+      &#8681;&#8681;
+#elif $trend.barometer.raw < 0.5
+      &#8681;
+#end if
+#end if
+#end if
+      </span><br/>
     </div>
   </div>
   <div class='bordered headerNoPad'>
@@ -54,6 +73,7 @@ $current.dateTime
   <div id='week' class='tab'><a id='week-link' href='.'>Week</a></div>
   <div id='month' class='tab'><a id='month-link' href='.'>Month</a></div>
   <div id='year' class='tab'><a id='year-link' href='.'>Year</a></div>
+  <div id='almanac' class='tab'><a href='almanac.html'>Almanac</a></div>
   <div style='float:right; width:10px;'>&nbsp;</div>
   <div id='button-tables' class='rightTab'><a id='button-tables-link' href='.'>Tables</a></div>
   <div id='button-charts' class='rightTab'><a id='button-charts-link' href='.'>Charts</a></div>
