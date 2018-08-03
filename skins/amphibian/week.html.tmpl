@@ -1,0 +1,76 @@
+#errorCatcher Echo
+## amphibian for weewx - Copyright 2012 Matthew Wall
+#encoding UTF-8
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head profile="http://www.w3.org/2005/10/profile">
+    <!-- amphibian for weewx - Copyright 2012 Matthew Wall -->
+    #if $encoding == 'utf8'
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    #end if    
+    <meta http-equiv='refresh' content='3600'>
+    <title>$station.location Weekly Weather Summary</title>
+    <link rel="stylesheet" type="text/css" href="amphibian.css"/>
+    <link rel="icon" type="image/png" href="favicon.ico" />
+  </head>
+
+  <body>
+    #include $Extras.header
+
+    <div id='charts'>
+      <div>
+        <div class='bordered cell graph' style='clear:both'>
+          <div class='leftCell'>Temperature and Dew Point</div><div class='units'>$unit.label.outTemp</div>
+          <div><img src='weekinouttempdew.png'/></div>
+        </div>
+        <div class='bordered cell graph'>
+          <div class='leftCell'>Wind Chill / Heat Index</div><div class='units'>$unit.label.outTemp</div>
+          <div><img src='weektempchill.png'/></div>
+        </div>
+        <div class='bordered cell graph'>
+          <div class='leftCell'>Humidity</div><div class='units'>$unit.label.outHumidity</div>
+          <div><img src='weekinouthum.png'/></div>
+        </div>
+        <div class='bordered cell graph'>
+          <div class='leftCell'>Pressure</div><div class='units'>$unit.label.barometer</div>
+          <div><img src='weekbarometer.png'/></div>
+        </div>
+      </div>
+      <div>
+        <div class='bordered cell graph' style='clear:both'>
+          <div class='leftCell'>Wind and Gusts</div><div class='units'>$unit.label.windSpeed</div>
+          <div><img src='weekwind.png'/></div>
+        </div>
+        <div class='bordered cell graph'>
+          <div class='leftCell'>Wind Direction</div>
+          <div><img src='weekwinddir.png'/></div>
+        </div>
+        <div class='bordered cell graph'>
+          <div class='leftCell'>Wind Vector</div>
+          <div><img src='weekwindvec.png'/></div>
+        </div>
+      </div>
+      <div>
+        <div class='bordered cell graph' style='clear:both'>
+          <div class='leftCell'>Rain</div><div class='units'>$unit.label.rain</div>
+          <div><img src='weekrain.png'/></div>
+        </div>
+      </div>
+#if $week.radiation.has_data
+      <div>
+        <div class='bordered cell graph' style='clear:both'>
+          <div class='leftCell'>Solar Radiation</div><div class='units'>$unit.label.radiation</div>
+          <div><img src='weekradiation.png'/></div>
+        </div>
+      </div>
+#end if
+    </div>
+
+    #include $Extras.footer
+
+    <script>
+      document.getElementById('7days').className += ' selected';
+      document.getElementById('button-charts').className += ' selected';
+    </script>
+  </body>
+</html>
