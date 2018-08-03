@@ -1,9 +1,9 @@
 ## amphibian for weewx - Copyright 2012-2013 Matthew Wall
-## $Id$
+## $Id: footer.inc 1957 2014-01-26 14:07:36Z mwall $
 
 <div class='wide bordered line cell' style='clear:both'>
   <div class='leftCell'>
-    weewx: $station.uptime - server: $station.os_uptime - weewx $station.version with $station.hardware
+    weewx: $station.uptime - server: $station.os_uptime - weewx $station.version with $station.hardware - amphibian $Extras.version
   </div>
 </div>
 

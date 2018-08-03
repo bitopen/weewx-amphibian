@@ -1,6 +1,6 @@
 /* javascript for the amphibian skin */
 /* copyright 2013 Matthew Wall, all rights reserved */
-/* $Id: amphibian.js 666 2013-10-03 14:14:38Z mwall $ */
+/* $Id: amphibian.js 798 2014-01-24 18:45:22Z mwall $ */
 
 /* list of pages, must match tabs in header.inc */
 var pages = ['hour','day','week','month','year'];

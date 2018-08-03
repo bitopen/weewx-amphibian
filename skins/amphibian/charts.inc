@@ -1,5 +1,5 @@
 ## amphibian for weewx - Copyright 2012-2013 Matthew Wall
-## $Id$
+## $Id: charts.inc 1957 2014-01-26 14:07:36Z mwall $
 
 <div id='charts'>
   <div>
