@@ -48,7 +48,7 @@
     </div>
   </div>
   <div class='bordered headerNoPad'>
-    <div class='leftCell'>rose</div>
+    <div class='leftCell'><!-- TODO: windrose image --></div>
     <div class='leftCell smallpad'>
       Wind <span class='value'>$current.windSpeed.formatted</span> $unit.label.windSpeed<br/>
       Gust <span class='value'>$current.windGust.formatted</span> $unit.label.windSpeed<br/>
