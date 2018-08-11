@@ -67,6 +67,9 @@ A:hover {text-decoration: underline;}
 .clearCell {
     clear: both;
 }
+.inlineCell {
+    display: inline-block;
+}
 .leftCell {
     float: left;
 }

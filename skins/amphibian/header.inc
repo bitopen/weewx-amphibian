@@ -2,11 +2,14 @@
 ## $Id: header.inc 1957 2014-01-26 14:07:36Z mwall $
 
 <div class='wide bordered line cell'>
-  <div class='leftCell'>
-$station.location ($station.latitude[0]&deg; $station.latitude[1]' $station.latitude[2] $station.longitude[0]&deg; $station.longitude[1]' $station.longitude[2] $station.altitude)
+  <div class='inlineCell'>
+    $station.location
+      ($station.latitude[0]&deg; $station.latitude[1]' $station.latitude[2]
+      $station.longitude[0]&deg; $station.longitude[1]' $station.longitude[2]
+      $station.altitude)
   </div>
-  <div class='rightCell'>
-$current.dateTime
+  <div class='inlineCell'>
+      at $current.dateTime.format("%d-%b-%Y %H:%M %Z")
   </div>
   <div class="clearCell" id="customHeader">
     $Extras.customHeader
