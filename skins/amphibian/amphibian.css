@@ -64,6 +64,9 @@ A:hover {text-decoration: underline;}
 .wide {
     width: 95%;
 }
+.clearCell {
+    clear: both;
+}
 .leftCell {
     float: left;
 }

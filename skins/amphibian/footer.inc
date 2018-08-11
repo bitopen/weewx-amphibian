@@ -5,6 +5,9 @@
   <div class='leftCell'>
     weewx: $station.uptime - server: $station.os_uptime - weewx $station.version with $station.hardware - amphibian $Extras.version
   </div>
+  <div class="clearCell" id="customFooter">
+    $Extras.customFooter
+  </div>
 </div>
 
 ## Include the Google Analytics code if there is an ID available:

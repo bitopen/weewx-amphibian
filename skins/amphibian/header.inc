@@ -8,6 +8,9 @@ $station.location ($station.latitude[0]&deg; $station.latitude[1]' $station.lati
   <div class='rightCell'>
 $current.dateTime
   </div>
+  <div class="clearCell" id="customHeader">
+    $Extras.customHeader
+  </div>
 </div>
 
 <div style='width: 100%'>
