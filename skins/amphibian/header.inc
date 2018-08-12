@@ -9,7 +9,7 @@
       $station.altitude)
   </div>
   <div class='inlineCell'>
-      at $current.dateTime.format("%d. %B %Y %H:%M %Z")
+      at $current.dateTime.format("%Y-%m-%d %H:%M %Z")
   </div>
   <div class="clearCell" id="customHeader">
     $Extras.customHeader
