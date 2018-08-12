@@ -2,7 +2,16 @@
 
 <div class='wide bordered line cell' style='clear:both'>
   <div class='leftCell'>
-    weewx: $station.uptime - server: $station.os_uptime - weewx $station.version with $station.hardware - amphibian $Extras.version
+    Position:
+      $station.latitude[0]&deg; $station.latitude[1]' $station.latitude[2]
+      $station.longitude[0]&deg; $station.longitude[1]' $station.longitude[2]
+      $station.altitude
+  </div>
+  <div class="clearCell">
+    System: weewx $station.version with $station.hardware - amphibian $Extras.version
+  </div>
+  <div class='clearCell'>
+    <!-- Uptime: $station.uptime - server: $station.os_uptime -->
   </div>
   <div class="clearCell" id="customFooter">
     $Extras.customFooter

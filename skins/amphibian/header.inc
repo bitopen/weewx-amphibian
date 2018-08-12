@@ -3,9 +3,6 @@
 <div class='wide bordered line cell'>
   <div class='inlineCell'>
     $station.location
-      ($station.latitude[0]&deg; $station.latitude[1]' $station.latitude[2]
-      $station.longitude[0]&deg; $station.longitude[1]' $station.longitude[2]
-      $station.altitude)
   </div>
   <div class='inlineCell'>
       at $current.dateTime.format("%Y-%m-%d %H:%M %Z")
