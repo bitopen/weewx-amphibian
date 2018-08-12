@@ -1,4 +1,3 @@
-# $Id: install.py 1169 2014-12-07 14:39:20Z mwall $
 # installer for amphibian
 # Copyright 2014 Matthew Wall
 
