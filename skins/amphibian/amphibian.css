@@ -52,13 +52,12 @@ A:hover {text-decoration: underline;}
     margin: 3px;
     padding-left: 6px;
     padding-right: 6px;
-    padding-top: 10px;    
+    padding-top: 4px;
     padding-bottom: 2px;                 
     float: left;            
 }
 .headerContent {
-    height: 64px;    
-    float: left;        
+    float: left;
 }
 .wide {
     width: 95%;
