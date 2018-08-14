@@ -78,7 +78,14 @@
   <div id='almanac' class='tab#if $period == "almanac" then " selected" else ""#'><a href='almanac.html'>Almanac</a></div>
   <div style="float: right; margin-right: 10px;">
     <div id='button-charts' class='tab#if $table then "" else " selected"#'><a id='button-charts-link' href='#slurp
-#if $period == "hour" then "." else $period+".html"#'>Charts</a></div>
+#if $period == "hour"
+.#slurp
+#else if $period == "almanac"
+year.html#slurp
+#else
+${period}.html#slurp
+#end if
+'>Charts</a></div>
     <div id='button-tables' class='tab#if $table then " selected" else ""#'><a id='button-tables-link' href='#slurp
 #if $period in ["hour", "day"] then "week" else $period##slurp
 #if $period in ["almanac", ] then "" else "-table" ##slurp
