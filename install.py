@@ -3,8 +3,10 @@
 
 from setup import ExtensionInstaller
 
+
 def loader():
     return AmphibianInstaller()
+
 
 class AmphibianInstaller(ExtensionInstaller):
     def __init__(self):
@@ -17,12 +19,11 @@ class AmphibianInstaller(ExtensionInstaller):
             config={
                 'StdReport': {
                     'amphibian': {
-                        'skin':'amphibian',
-                        'HTML_ROOT':'amphibian'}}},
+                        'skin': 'amphibian',
+                        'HTML_ROOT': 'amphibian'}}},
             files=[('skins/amphibian',
                     ['skins/amphibian/almanac.html.tmpl',
                      'skins/amphibian/amphibian.css',
-                     'skins/amphibian/amphibian.js',
                      'skins/amphibian/charts.inc',
                      'skins/amphibian/day.html.tmpl',
                      'skins/amphibian/favicon.ico',
