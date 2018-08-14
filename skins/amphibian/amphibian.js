@@ -8,7 +8,7 @@ var default_page = 'hour.html';
 
 function setURLs(period,format) {
     setTabURLs(period,format);
-    setImgURLs(period);
+//    setImgURLs(period);
 }
 
 function setTabURLs(period,format) {
