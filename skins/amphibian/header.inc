@@ -76,10 +76,12 @@
   <div id='month' class='tab#if $period == "month" then " selected" else ""#'><a id='month-link' href='month${table}.html'>Month</a></div>
   <div id='year' class='tab#if $period == "year" then " selected" else ""#'><a id='year-link' href='year${table}.html'>Year</a></div>
   <div id='almanac' class='tab#if $period == "almanac" then " selected" else ""#'><a href='almanac.html'>Almanac</a></div>
-  <div style='float:right; width:10px;'>&nbsp;</div>
-  <div id='button-tables' class='rightTab#if $table then " selected" else ""#'><a id='button-tables-link' href='#slurp
+  <div style="float: right; margin-right: 10px;">
+    <div id='button-charts' class='tab#if $table then "" else " selected"#'><a id='button-charts-link' href='#slurp
+#if $period == "hour" then "." else $period+".html"#'>Charts</a></div>
+    <div id='button-tables' class='tab#if $table then " selected" else ""#'><a id='button-tables-link' href='#slurp
 #if $period in ["hour", "day"] then "week" else $period##slurp
 #if $period in ["almanac", ] then "" else "-table" ##slurp
 .html'>Tables</a></div>
-  <div id='button-charts' class='rightTab#if $table then "" else " selected"#'><a id='button-charts-link' href='#if $period == "hour" then "." else $period+".html"#'>Charts</a></div>
+  </div>
 </div>
