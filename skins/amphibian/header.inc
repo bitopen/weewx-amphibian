@@ -70,13 +70,16 @@
 
 <div class='tabPane'>
   <div class='leftCell' style='width:10px'>&nbsp;</div>
-  <div id='hour' class='tab'><a id='hour-link' href='.'>Hour</a></div>
-  <div id='day' class='tab'><a id='day-link' href='.'>Day</a></div>
-  <div id='week' class='tab'><a id='week-link' href='.'>Week</a></div>
-  <div id='month' class='tab'><a id='month-link' href='.'>Month</a></div>
-  <div id='year' class='tab'><a id='year-link' href='.'>Year</a></div>
-  <div id='almanac' class='tab'><a href='almanac.html'>Almanac</a></div>
+  <div id='hour' class='tab#if $period == "hour" then " selected" else ""#'><a id='hour-link' href='.'>Hour</a></div>
+  <div id='day' class='tab#if $period == "day" then " selected" else ""#'><a id='day-link' href='day.html'>Day</a></div>
+  <div id='week' class='tab#if $period == "week" then " selected" else ""#'><a id='week-link' href='week${table}.html'>Week</a></div>
+  <div id='month' class='tab#if $period == "month" then " selected" else ""#'><a id='month-link' href='month${table}.html'>Month</a></div>
+  <div id='year' class='tab#if $period == "year" then " selected" else ""#'><a id='year-link' href='year${table}.html'>Year</a></div>
+  <div id='almanac' class='tab#if $period == "almanac" then " selected" else ""#'><a href='almanac.html'>Almanac</a></div>
   <div style='float:right; width:10px;'>&nbsp;</div>
-  <div id='button-tables' class='rightTab'><a id='button-tables-link' href='.'>Tables</a></div>
-  <div id='button-charts' class='rightTab'><a id='button-charts-link' href='.'>Charts</a></div>
+  <div id='button-tables' class='rightTab#if $table then " selected" else ""#'><a id='button-tables-link' href='#slurp
+#if $period in ["hour", "day"] then "week" else $period##slurp
+#if $period in ["almanac", ] then "" else "-table" ##slurp
+.html'>Tables</a></div>
+  <div id='button-charts' class='rightTab#if $table then "" else " selected"#'><a id='button-charts-link' href='#if $period == "hour" then "." else $period+".html"#'>Charts</a></div>
 </div>
